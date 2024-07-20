@@ -1,5 +1,5 @@
-import {FC, memo, useCallback, useMemo, useState} from 'react';
 import emailjs from 'emailjs-com';
+import {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {
   name: string;
@@ -46,7 +46,7 @@ const ContactForm: FC = memo(() => {
         const response = await emailjs.send(serviceID, templateID, templateParams, userID);
         if (response.status === 200) {
           alert('Email sent successfully!');
-          setData({ name: '', email: '', message: '' });
+          setData({name: '', email: '', message: ''});
         } else {
           alert('Failed to send email.');
         }
