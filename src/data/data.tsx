@@ -18,6 +18,7 @@ import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 import porfolioImage7 from '../images/portfolio/portfolio-7.png';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+import porfolioImage10 from '../images/portfolio/portfolio-10.png';
 import profilepic from '../images/profilepic.jpg';
 import {
   About,
@@ -63,7 +64,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a fresher from <strong className="text-stone-100">Cochin University of Science and Technology</strong>, 
+        I'm a <strong className="text-stone-100">BTech</strong> graduate from <strong className="text-stone-100">Cochin University of Science and Technology</strong>, 
         looking to kickstart my career in the field of <strong className="text-stone-100">Information Technology</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -104,6 +105,8 @@ player with an eye for detail.`,
     {label: 'Interests', text: 'Reading, Listening Music, Gaming', Icon: SparklesIcon},
     {label: 'Study', text: 'B.Tech in Information Technology', Icon: AcademicCapIcon},
     {label: 'University', text: 'Cochin University of Science and Technology', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'International Centre for Free and Open Source Solutions (ICFOSS)', Icon: BuildingOffice2Icon},
+
   ],
 };
 
@@ -141,7 +144,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'C++',
-        level: 5,
+        level: 7,
       },
     ],
   },
@@ -157,7 +160,7 @@ export const skills: SkillGroup[] = [
         level: 7,
       },
       {
-        name: 'PHP',
+        name: 'React',
         level: 4,
       },
     ],
@@ -167,15 +170,15 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Linux',
-        level: 6,
+        level: 8,
       },
       {
-        name: 'SQL',
-        level: 4,
+        name: 'AWS',
+        level: 5,
       },
       {
         name: 'Networking',
-        level: 3,
+        level: 6,
       },
     ],
   },
@@ -185,9 +188,14 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
- 
   {
-    title: 'Google Cybersecurity Proffessional Certificate',
+    title: 'Certified in Cybersecurity',
+    description: 'from ISC2',
+    url: '',
+    image: porfolioImage10,
+  },
+  {
+    title: 'Google Cybersecurity Professional Certificate',
     description: 'from Coursera',
     url: 'https://coursera.org/share/a3d67672293e5637d40f9ab8f009af70',
     image: porfolioImage7,
@@ -251,7 +259,19 @@ export const education: TimelineItem[] = [
   },
 ];
 
-
+export const experience: TimelineItem[] = [
+  {
+    date: 'September 2024 - Present',
+    location: 'International Centre for Free and Open Source Solutions',
+    title: 'Cybersecurity Intern',
+    content: (
+      <p>
+        Carrying out Vulnerability Assessments and Security Audits
+        of numerous projects with a special focus on leveraging open-source technologies
+      </p>
+    ),
+  },
+];
 
 /**
  * Contact section
