@@ -191,7 +191,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Certified in Cybersecurity',
     description: 'from ISC2',
-    url: '',
+    url: 'https://www.credly.com/badges/08bddf20-31be-44b5-899f-ab8f49ac13c1/public_url',
     image: porfolioImage10,
   },
   {
